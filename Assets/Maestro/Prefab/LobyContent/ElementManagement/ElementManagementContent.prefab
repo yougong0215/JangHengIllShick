@@ -144,6 +144,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5520866113624640305}
+  - component: {fileID: 890131592}
   m_Layer: 5
   m_Name: ElementManagementContent
   m_TagString: Untagged
@@ -175,6 +176,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &890131592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938774689134822692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f3cfa4343de8c4f95adc137ceedad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _quantitiyContent:
+  - {fileID: 2913330124888638798, guid: f958c9e02d5a50a4299b2880ee335d2e, type: 3}
+  - {fileID: 3750380558093351573, guid: 33b9cad50e70fd148904fc8500d97464, type: 3}
+  - {fileID: 7530321175076479570, guid: bb7ba678c4172c846abb449797edd57d, type: 3}
 --- !u!1 &1379034782029142324
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,7 +313,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7374994361491735473}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 890131592}
+        m_TargetAssemblyTypeName: ManagementMenuBtn, Assembly-CSharp
+        m_MethodName: NextScreen
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2312762320911564394
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,7 +717,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 448296407790618209}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 890131592}
+        m_TargetAssemblyTypeName: ManagementMenuBtn, Assembly-CSharp
+        m_MethodName: NextScreen
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8588903398187117189
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,7 +851,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 9071776139743105786}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 890131592}
+        m_TargetAssemblyTypeName: ManagementMenuBtn, Assembly-CSharp
+        m_MethodName: NextScreen
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &322788682796434371
 PrefabInstance:
   m_ObjectHideFlags: 0
