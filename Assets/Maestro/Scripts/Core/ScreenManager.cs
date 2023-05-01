@@ -7,7 +7,7 @@ using DG.Tweening;
 [System.Serializable]
 public class SaveBeforeScreenInfo
 {
-    public GameObject BeforeContent;
+    public List<GameObject> BeforeContentList = new List<GameObject>();
     public GameObject CurrentContent;
     public ChangeDirection currentContentActiveDir;
 }
@@ -15,6 +15,7 @@ public class SaveBeforeScreenInfo
 public class ScreenManager : MonoBehaviour
 {
     public static ScreenManager Instance;
+    public bool canclick;
     public Vector3[] directionPos;
     private GameObject _renderingCanvas;
 
@@ -28,6 +29,7 @@ public class ScreenManager : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(this);
+        canclick = true;
         _renderingCanvas = GameObject.Find("RenderingCanvas");
         beforeInfo = new SaveBeforeScreenInfo();
     }
@@ -35,7 +37,7 @@ public class ScreenManager : MonoBehaviour
     public void ScreenChange(GameObject content, ChangeDirection toMoveDir, float time)
     {
         if (toMoveDir != ChangeDirection.center)
-            beforeInfo.BeforeContent = content;
+            beforeInfo.BeforeContentList.Add(content);
         else
         {
             beforeInfo.CurrentContent = content;

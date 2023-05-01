@@ -145,6 +145,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1495716430007455625}
   - component: {fileID: 6413833005054818182}
+  - component: {fileID: 5725856806212114357}
   m_Layer: 5
   m_Name: FactoryBtnList
   m_TagString: Untagged
@@ -199,6 +200,19 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 50}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &5725856806212114357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4156809838799249805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4967da75ad8384d4a8445aba98258342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _matCliker: {fileID: 5756420134873391733, guid: e0a6ea6001e183445a5044361d61b4cf, type: 3}
 --- !u!1 &4485911558173607463
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,7 +546,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6897724380604795141}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5725856806212114357}
+        m_TargetAssemblyTypeName: FactoryBtn, Assembly-CSharp
+        m_MethodName: ClickBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5729225371247805402
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,7 +968,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3349372365245497629}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5725856806212114357}
+        m_TargetAssemblyTypeName: FactoryBtn, Assembly-CSharp
+        m_MethodName: ClickBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8785426604512449485
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,7 +1141,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8470116892572075852}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5725856806212114357}
+        m_TargetAssemblyTypeName: FactoryBtn, Assembly-CSharp
+        m_MethodName: ClickBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &3900889680013111915
 PrefabInstance:
   m_ObjectHideFlags: 0

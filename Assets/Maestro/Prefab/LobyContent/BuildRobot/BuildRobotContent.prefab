@@ -785,7 +785,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6256833209805231021}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4444605851569190826}
+        m_TargetAssemblyTypeName: ProductPartsScroll, Assembly-CSharp
+        m_MethodName: ProduceScroll
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2987643718012952505
 GameObject:
   m_ObjectHideFlags: 0
@@ -1105,7 +1117,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 9151382416228718993}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4444605851569190826}
+        m_TargetAssemblyTypeName: ProductPartsScroll, Assembly-CSharp
+        m_MethodName: ProduceScroll
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5792422332583267955
 GameObject:
   m_ObjectHideFlags: 0
@@ -1213,9 +1237,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Save
-
-'
+  m_text: Reset
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1296,6 +1318,7 @@ GameObject:
   - component: {fileID: 2878084802787451987}
   - component: {fileID: 7244889909945090954}
   - component: {fileID: 4638481682024873191}
+  - component: {fileID: 4444605851569190826}
   m_Layer: 5
   m_Name: PartsBase
   m_TagString: Untagged
@@ -1390,6 +1413,25 @@ MonoBehaviour:
   m_Spacing: {x: 15, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &4444605851569190826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6467630238494624703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaa023acf1ec92447aeff7023b36b0de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _partsTypeScroll: {fileID: 1965479301840213291, guid: e1c024dce7c22f543a6ab7f364d9f371, type: 3}
+  _partsList:
+  - {fileID: 3454754622514320383, guid: 2e9fd4b2579e3d64a8fa83b9fb7ec9f2, type: 3}
+  - {fileID: 6967539675833156276, guid: 5cbb8db9715a7b64f8d0e646f3add9e3, type: 3}
+  - {fileID: 1679816865612819355, guid: 62d88226dffc1224f82753e18a3f6a70, type: 3}
+  - {fileID: 2631149166616976796, guid: 7881aeb14b2d46b4ebf729cae57bd0ff, type: 3}
+  - {fileID: 1184305363468992943, guid: f5dc526f9a6a58f42bcfa4cf50593f64, type: 3}
 --- !u!1 &6943160889748691739
 GameObject:
   m_ObjectHideFlags: 0
@@ -1511,7 +1553,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3135001184762389623}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4444605851569190826}
+        m_TargetAssemblyTypeName: ProductPartsScroll, Assembly-CSharp
+        m_MethodName: ProduceScroll
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7086008803069346019
 GameObject:
   m_ObjectHideFlags: 0
@@ -1633,7 +1687,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4059731130183955539}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4444605851569190826}
+        m_TargetAssemblyTypeName: ProductPartsScroll, Assembly-CSharp
+        m_MethodName: ProduceScroll
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &9000574730734413745
 GameObject:
   m_ObjectHideFlags: 0
@@ -1890,7 +1956,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8870700759539741627}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4444605851569190826}
+        m_TargetAssemblyTypeName: ProductPartsScroll, Assembly-CSharp
+        m_MethodName: ProduceScroll
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &9049821532135055902
 GameObject:
   m_ObjectHideFlags: 0
