@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UIManaging;
 
-public class BuildRobotBtn : LobyBottomBtn
+public class BuildRobotBtn : ButtonBase
 {
     [SerializeField] private GameObject _buildRobotContent;
     public override void ClickBtn()
     {
+        base.ClickUnActive();
         GameObject robot = ScreenManager.Instance.CreateContent(_buildRobotContent, ChangeDirection.right);
         GameObject loby = GameObject.Find("LobyContent");
         ScreenManager.Instance.ScreenChange(robot, ChangeDirection.center, 0.5f);

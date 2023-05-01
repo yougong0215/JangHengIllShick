@@ -20,6 +20,7 @@ public class ScreenManager : MonoBehaviour
     private GameObject _renderingCanvas;
 
     public SaveBeforeScreenInfo beforeInfo;
+    [SerializeField] private GameObject EventSystem;
     private void Awake()
     {
         if(Instance != null)
@@ -52,5 +53,17 @@ public class ScreenManager : MonoBehaviour
         conten.transform.localPosition = directionPos[(int)createPos];
         beforeInfo.currentContentActiveDir = createPos;
         return conten;
+    }
+
+    public void ClickActive()
+    {
+        if(EventSystem.activeSelf)
+        {
+            EventSystem.SetActive(false);
+        }
+        else
+        {
+            EventSystem.SetActive(true);
+        }
     }
 }

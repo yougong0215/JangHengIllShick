@@ -282,6 +282,7 @@ MonoBehaviour:
     BeforeContentList: []
     CurrentContent: {fileID: 0}
     currentContentActiveDir: 0
+  EventSystem: {fileID: 972483714}
 --- !u!4 &367304163
 Transform:
   m_ObjectHideFlags: 0

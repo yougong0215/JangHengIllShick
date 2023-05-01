@@ -4,7 +4,7 @@ using UnityEngine;
 using UIManaging;
 
 
-public class MaterialSupplyBtn : LobyBottomBtn
+public class MaterialSupplyBtn : ButtonBase
 {
     [SerializeField] private GameObject _materialSupplyContent;
     public override void ClickBtn()

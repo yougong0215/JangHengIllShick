@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UIManaging;
 
-public class FactoryBtn : LobyBottomBtn
+public class FactoryBtn : ButtonBase
 {
     [SerializeField] private GameObject _matCliker;
     public override void ClickBtn()

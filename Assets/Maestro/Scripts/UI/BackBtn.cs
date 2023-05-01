@@ -8,6 +8,7 @@ public class BackBtn : MonoBehaviour
 {
     public void Back()
     {
+        ScreenManager.Instance.ClickActive();
         ScreenManager.Instance.beforeInfo.BeforeContentList
             [ScreenManager.Instance.beforeInfo.BeforeContentList.Count - 1].SetActive(true);
 
@@ -20,8 +21,6 @@ public class BackBtn : MonoBehaviour
                       ScreenManager.Instance.directionPos[(int)ScreenManager.Instance.beforeInfo.currentContentActiveDir], 0.5f);
 
         
-
-        
         StartCoroutine(ActiveFalse(ScreenManager.Instance.beforeInfo.CurrentContent));
     }
 
@@ -32,5 +31,6 @@ public class BackBtn : MonoBehaviour
         ScreenManager.Instance.beforeInfo.CurrentContent = ScreenManager.Instance.beforeInfo.BeforeContentList
         [ScreenManager.Instance.beforeInfo.BeforeContentList.Count - 1];
         ScreenManager.Instance.beforeInfo.BeforeContentList.RemoveAt(ScreenManager.Instance.beforeInfo.BeforeContentList.Count - 1);
+        ScreenManager.Instance.ClickActive();
     }
 }
