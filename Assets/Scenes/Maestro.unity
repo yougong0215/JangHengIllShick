@@ -688,14 +688,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4567211362031320152, guid: d622d85019e389f40b61779c7f065a75, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4567211362031320152, guid: d622d85019e389f40b61779c7f065a75, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5084163903654576272, guid: d622d85019e389f40b61779c7f065a75, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -771,14 +763,6 @@ PrefabInstance:
     - target: {fileID: 8393014577153078353, guid: d622d85019e389f40b61779c7f065a75, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8741098527638271969, guid: d622d85019e389f40b61779c7f065a75, type: 3}
-      propertyPath: m_Content
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8741098527638271969, guid: d622d85019e389f40b61779c7f065a75, type: 3}
-      propertyPath: m_HorizontalScrollbar
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d622d85019e389f40b61779c7f065a75, type: 3}
