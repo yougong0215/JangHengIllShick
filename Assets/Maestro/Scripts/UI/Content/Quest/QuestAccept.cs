@@ -4,9 +4,9 @@ using UnityEngine;
 using UIManaging;
 using DG.Tweening;
 
-public class BackBtn : MonoBehaviour
+public class QuestAccept : MonoBehaviour
 {
-    public void Back()
+    public void Accept()
     {
         ScreenManager.Instance.ClickActive();
         ScreenManager.Instance.beforeInfo.BeforeContentList
@@ -20,7 +20,8 @@ public class BackBtn : MonoBehaviour
         ScreenManager.Instance.beforeInfo.CurrentContent.transform.DOLocalMove(
                       ScreenManager.Instance.directionPos[(int)ScreenManager.Instance.beforeInfo.currentContentActiveDir], 0.5f);
 
-        
+        QuestContent _qc = GameObject.Find("QuestContent").GetComponent<QuestContent>();
+        _qc.SetScreen();
         StartCoroutine(ActiveFalse(ScreenManager.Instance.beforeInfo.CurrentContent));
     }
 

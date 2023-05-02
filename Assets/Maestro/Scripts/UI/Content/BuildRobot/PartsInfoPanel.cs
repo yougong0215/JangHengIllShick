@@ -12,7 +12,6 @@ public class PartsInfoPanel : MonoBehaviour
         GameObject panel = Instantiate(_partsPanel, GameObject.Find("BuildRobotContent").transform);
 
         Image img = panel.transform.Find("PartsImage").GetComponent<Image>();
-        Debug.Log(img);
         img.sprite = image;
         GameObject txtGroup = panel.transform.Find("TextGroup").gameObject;
         TextMeshProUGUI text = txtGroup.transform.Find("NameText").GetComponent<TextMeshProUGUI>();

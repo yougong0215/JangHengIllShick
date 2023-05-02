@@ -9,6 +9,7 @@ public class MaterialSupplyBtn : ButtonBase
     [SerializeField] private GameObject _materialSupplyContent;
     public override void ClickBtn()
     {
+        base.ClickUnActive();
         GameObject mat = ScreenManager.Instance.CreateContent(_materialSupplyContent, ChangeDirection.right);
         GameObject loby = GameObject.Find("LobyContent");
         ScreenManager.Instance.ScreenChange(mat, ChangeDirection.center, 0.5f);

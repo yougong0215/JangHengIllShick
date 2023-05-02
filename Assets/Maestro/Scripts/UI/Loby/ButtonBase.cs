@@ -23,5 +23,6 @@ public abstract class ButtonBase : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         ScreenManager.Instance.ClickActive();
         loby.SetActive(false);
+        //Destroy(loby);
     }
 }

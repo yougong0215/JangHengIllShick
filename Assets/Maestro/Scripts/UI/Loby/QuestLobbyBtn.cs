@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UIManaging;
 
-public class QuestBtn : ButtonBase
+public class QuestLobbyBtn : ButtonBase
 {
     [SerializeField] private GameObject _questContent;
     public override void ClickBtn()

@@ -8,6 +8,7 @@ public class FactoryBtn : ButtonBase
     [SerializeField] private GameObject _matCliker;
     public override void ClickBtn()
     {
+        base.ClickUnActive();
         GameObject matClicker = ScreenManager.Instance.CreateContent(_matCliker, ChangeDirection.right);
         GameObject mat = GameObject.Find("MaterialSupplyContent");
         ScreenManager.Instance.ScreenChange(matClicker, ChangeDirection.center, 0.5f);
