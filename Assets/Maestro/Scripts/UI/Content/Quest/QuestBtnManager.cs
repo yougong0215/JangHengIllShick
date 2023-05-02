@@ -13,16 +13,26 @@ public class QuestBtnManager : MonoBehaviour
     {
         if(QuestManager.Instance.questSaveInfo.unSave)
         {
-            List<QuestSO> _secondSoList = QuestManager.Instance.questSOList;
-            for (int i = 0; i < _questBtnList.Count; i++)
+            int currentNumber = Random.Range(0, QuestManager.Instance.questSOList.Count);
+            List<int> shuffle = new List<int>();
+            for (int i = 0; i < QuestManager.Instance.questSOList.Count;)
             {
-                int soRand = Random.Range(0, _secondSoList.Count);
+                if (shuffle.Contains(currentNumber))
+                {
+                    currentNumber = Random.Range(0, QuestManager.Instance.questSOList.Count);
+                }
+                else
+                {
+                    shuffle.Add(currentNumber);
+                    i++;
+                }
+            }
 
-                QuestButton qbtn = _questBtnList[i].GetComponent<QuestButton>();
-                qbtn.questSo = _secondSoList[soRand];
-                QuestManager.Instance.questSOList[i] = _secondSoList[soRand];
-                qbtn.SetName();
-                _secondSoList.RemoveAt(soRand);
+            for(int i = 0; i < shuffle.Count; i++)
+            {
+                QuestButton qb = _questBtnList[i].GetComponent<QuestButton>();
+                qb.questSo = QuestManager.Instance.questSOList[shuffle[i]];
+                qb.SetName();
             }
 
             QuestManager.Instance.questSaveInfo.unSave = false;
@@ -32,7 +42,7 @@ public class QuestBtnManager : MonoBehaviour
             for(int i = 0; i < 3; i++)
             {
                 QuestButton qbtn = _questBtnList[i].GetComponent<QuestButton>();
-                qbtn.questSo = QuestManager.Instance.questSOList[i];
+                qbtn.questSo = QuestManager.Instance.questSaveInfo.saveList[i];
                 qbtn.SetName();
             }
         }

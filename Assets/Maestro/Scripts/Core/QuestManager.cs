@@ -14,6 +14,7 @@ public class QuestManager : MonoBehaviour
     public static QuestManager Instance;
     public List<QuestSO> questSOList = new List<QuestSO>();
     public SaveQuestInfo questSaveInfo;
+    public QuestSO selectQuest;
 
     public bool isIngQuest;
     private void Awake()
@@ -24,7 +25,9 @@ public class QuestManager : MonoBehaviour
         }
         Instance = this;
         questSaveInfo = new SaveQuestInfo();
+        questSaveInfo.unSave = true;
         DontDestroyOnLoad(this);
     }
 
+    
 }

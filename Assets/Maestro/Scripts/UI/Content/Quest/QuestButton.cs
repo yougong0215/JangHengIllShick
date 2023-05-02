@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UIManaging;
@@ -19,6 +17,7 @@ public class QuestButton : ButtonBase
         base.ClickUnActive();
         QuestContent _qc = GameObject.Find("QuestContent").GetComponent<QuestContent>();
         _qc.ingQuest = true;
+        QuestManager.Instance.selectQuest = questSo;
         GameObject ele = ScreenManager.Instance.CreateContent(_questcheckContent, ChangeDirection.right);
         GameObject QC = GameObject.Find("QuestContent");
         ScreenManager.Instance.ScreenChange(ele, ChangeDirection.center, 0.5f);

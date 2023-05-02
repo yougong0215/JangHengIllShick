@@ -333,8 +333,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 290b7cd3e36c4e54981512d3c5a08966, type: 2}
   - {fileID: 11400000, guid: de0240241b39bdf47b378b6b1db5f0e3, type: 2}
   questSaveInfo:
-    unSave: 0
+    unSave: 1
     saveList: []
+  selectQuest: {fileID: 0}
   isIngQuest: 0
 --- !u!4 &532915707
 Transform:
@@ -442,13 +443,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6622540209832491183, guid: cebdfc021d6055046aac9184d90eeab9, type: 3}
+    - target: {fileID: 4155141670331278783, guid: cebdfc021d6055046aac9184d90eeab9, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622540209832491183, guid: cebdfc021d6055046aac9184d90eeab9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7909005584313264252, guid: cebdfc021d6055046aac9184d90eeab9, type: 3}
       propertyPath: m_Name
       value: QuestContent
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909005584313264252, guid: cebdfc021d6055046aac9184d90eeab9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662456380962293730, guid: cebdfc021d6055046aac9184d90eeab9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cebdfc021d6055046aac9184d90eeab9, type: 3}
