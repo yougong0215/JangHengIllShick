@@ -10,4 +10,5 @@ public class PartsSo : ScriptableObject
     public float atk;
     public float def;
     public string info;
+    public GameObject partsPrefab;
 }
